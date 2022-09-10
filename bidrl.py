@@ -135,7 +135,7 @@ while True:
 
         i += 1
 
-        if bid_status == "winning":
+        if bid_status != "winning":
 
             # Call the function to send the text message
             send_text(f"product: {prod} , current bid: {cur_bid}, time left: {time_left}, to extend reply 'y'.")
